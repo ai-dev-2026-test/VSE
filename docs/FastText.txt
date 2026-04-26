@@ -1,0 +1,26 @@
+⚙️ FastText Algorithm (Simple Explanation)
+
+fastText improves on Word2Vec by:
+
+1. Subword modeling
+Each word is broken into character n-grams
+Example:
+"where" → <wh, whe, her, ere, re>
+Final word vector = sum of n-gram vectors
+
+➡️ This allows handling unseen words and morphology
+
+2. Shallow neural model
+Similar to Word2Vec (CBOW / Skip-gram)
+Uses:
+Linear layer (no deep network)
+Very fast training
+
+3. Efficient classification
+Uses:
+Bag of words + n-grams
+Hierarchical softmax (tree-based classification)
+🧠 Why fastText is important
+Works well on large-scale text
+Handles rare & misspelled words
+Much faster than deep models (sometimes seconds vs days)
